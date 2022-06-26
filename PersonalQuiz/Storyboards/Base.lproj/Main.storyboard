@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,7 @@
         <!--Вопрос №-->
         <scene sceneID="p27-Hh-ZCL">
             <objects>
-                <viewController id="Lst-w4-zkw" sceneMemberID="viewController">
+                <viewController id="Lst-w4-zkw" customClass="QuestionViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="01Q-Sj-dCr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,12 +247,6 @@
                             <constraint firstItem="ZqB-fp-9el" firstAttribute="trailing" secondItem="cyM-Yt-IDZ" secondAttribute="trailing" constant="20" id="hHq-PO-pDm"/>
                             <constraint firstItem="3t5-YR-VMn" firstAttribute="top" secondItem="ZqB-fp-9el" secondAttribute="top" id="ygV-cw-hKN"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="cyM-Yt-IDZ"/>
-                                <exclude reference="I4c-9h-w1t"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="He9-cZ-vq0">
                         <barButtonItem key="rightBarButtonItem" title="Ира - переход" id="u11-LO-TmI">
@@ -272,7 +266,7 @@
         <!--Результаты-->
         <scene sceneID="Jwz-hq-99t">
             <objects>
-                <viewController id="Ktm-yb-upZ" sceneMemberID="viewController">
+                <viewController id="Ktm-yb-upZ" customClass="ResultsViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0EZ-Rq-PiD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -303,9 +297,16 @@
                             <constraint firstAttribute="trailing" secondItem="yw3-z3-aZq" secondAttribute="trailing" constant="20" id="d8j-SF-p1S"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результаты" id="vrr-6L-MPs"/>
+                    <navigationItem key="navigationItem" title="Результаты" id="vrr-6L-MPs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="qLK-wA-Yvd">
+                            <connections>
+                                <segue destination="jqs-cu-XoG" kind="unwind" unwindAction="unwindFor:" id="5Zi-E4-usQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBZ-cY-18A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="jqs-cu-XoG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2351" y="65"/>
         </scene>
