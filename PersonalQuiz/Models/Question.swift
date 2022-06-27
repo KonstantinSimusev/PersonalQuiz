@@ -5,6 +5,8 @@
 //  Created by Konstantin Simusev on 26.06.2022.
 //
 
+import UIKit
+
 struct Question {
     let title: String
     let type: ResponseType
@@ -13,33 +15,33 @@ struct Question {
     static func getQuestions() -> [Question] {
         [
             Question(
-                title: "Какую пищу предпочитаете?",
+                title: "Какую пищу Вы предпочитаете?",
                 type: .single,
                 answers: [
-                    Answer(title: "Стейк", type: .dog),
-                    Answer(title: "Рыба", type: .cat),
-                    Answer(title: "Морковь", type: .rabbit),
-                    Answer(title: "Кукуруза", type: .turtle)
+                    Answer(title: "🥩", type: .dog),
+                    Answer(title: "🐠", type: .cat),
+                    Answer(title: "🥕", type: .rabbit),
+                    Answer(title: "🌽", type: .turtle)
                 ]
             ),
             Question(
-                title: "Что вам нравится больше?",
+                title: "Что Вам нравится больше?",
                 type: .multiple,
                 answers: [
-                    Answer(title: "Плавать", type: .dog),
-                    Answer(title: "Спать", type: .cat),
-                    Answer(title: "Обниматься", type: .rabbit),
-                    Answer(title: "Есть", type: .turtle)
+                    Answer(title: "🏊‍♂️", type: .dog),
+                    Answer(title: "😴", type: .cat),
+                    Answer(title: "🍽", type: .rabbit),
+                    Answer(title: "🌞", type: .turtle)
                 ]
             ),
             Question(
                 title: "Любите ли Вы поездки на машине?",
                 type: .ranged,
                 answers: [
-                    Answer(title: "Ненавижу", type: .dog),
+                    Answer(title: "👎", type: .dog),
                     Answer(title: "Нервничаю", type: .cat),
                     Answer(title: "Не замечаю", type: .rabbit),
-                    Answer(title: "Обожаю", type: .turtle)
+                    Answer(title: "👍", type: .turtle)
                 ]
             )
         ]
