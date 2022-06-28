@@ -36,24 +36,13 @@ class QuestionViewController: UIViewController {
         questions[questionIndex].answers
     }
     private var questionIndex = 0
-    
-    private let primaryColor = UIColor(
-        red: 60/255,
-        green: 179/255,
-        blue: 113/255,
-        alpha: 1
-    )
-    
-    private let secondaryColor = UIColor(
-        red: 240/255,
-        green: 255/255,
-        blue: 240/255,
-        alpha: 1
-    )
-        
+            
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        view.addVerticalGradientLayer(
+            topColor: .green,
+            bottomColor: .blue
+        )
         setupUI()
     }
     

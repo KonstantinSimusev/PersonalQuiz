@@ -5,18 +5,39 @@
 //  Created by Konstantin Simusev on 27.06.2022.
 //
 
-//import Foundation
-//
-//private let primaryColor = UIColor(
-//    red: 210/255,
-//    green: 109/255,
-//    blue: 128/255,
-//    alpha: 1
-//)
-//
-//private let secondaryColor = UIColor(
-//    red: 107/255,
-//    green: 148/255,
-//    blue: 230/255,
-//    alpha: 1
-//)
+import UIKit
+
+struct Color {
+    static var steelBlue: UIColor {
+        UIColor(
+            red: 70/255,
+            green: 130/255,
+            blue: 180/255,
+            alpha: 1
+        )
+    }
+    static var lightCyan: UIColor {
+        UIColor(
+            red: 107/255,
+            green: 148/255,
+            blue: 230/255,
+            alpha: 1
+        )
+    }
+    
+    private let primaryColor = UIColor(
+        red: 60/255,
+        green: 179/255,
+        blue: 113/255,
+        alpha: 1
+    )
+    
+    private let secondaryColor = UIColor(
+        red: 240/255,
+        green: 255/255,
+        blue: 240/255,
+        alpha: 1
+    )
+}
+
+

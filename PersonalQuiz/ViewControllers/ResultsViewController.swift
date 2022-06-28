@@ -11,25 +11,14 @@ class ResultsViewController: UIViewController {
     @IBOutlet var animaTypelLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     
-    private let primaryColor = UIColor(
-        red: 70/255,
-        green: 130/255,
-        blue: 180/255,
-        alpha: 1
-    )
-    
-    private let secondaryColor = UIColor(
-        red: 224/255,
-        green: 255/255,
-        blue: 255/255,
-        alpha: 1
-    )
-
     var answers: [Answer]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        view.addVerticalGradientLayer(
+            topColor: .cyan,
+            bottomColor: .blue
+        )
         navigationItem.hidesBackButton = true
         updateResult()
     }
