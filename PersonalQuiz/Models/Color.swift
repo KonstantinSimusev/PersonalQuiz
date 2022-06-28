@@ -16,28 +16,33 @@ struct Color {
             alpha: 1
         )
     }
+    
     static var lightCyan: UIColor {
         UIColor(
-            red: 107/255,
-            green: 148/255,
-            blue: 230/255,
+            red: 244/255,
+            green: 255/255,
+            blue: 255/255,
             alpha: 1
         )
     }
     
-    private let primaryColor = UIColor(
-        red: 60/255,
-        green: 179/255,
-        blue: 113/255,
-        alpha: 1
-    )
+    static var mediumSeaGreen: UIColor {
+        UIColor(
+            red: 60/255,
+            green: 179/255,
+            blue: 113/255,
+            alpha: 1
+        )
+    }
     
-    private let secondaryColor = UIColor(
-        red: 240/255,
-        green: 255/255,
-        blue: 240/255,
-        alpha: 1
-    )
+    static var honeydew: UIColor {
+        UIColor(
+            red: 240/255,
+            green: 255/255,
+            blue: 240/255,
+            alpha: 1
+        )
+    }
 }
 
 

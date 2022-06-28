@@ -11,8 +11,8 @@ class IntroductionViewController: UIViewController {
 
     override func viewDidLoad() {
         view.addVerticalGradientLayer(
-            topColor: .green,
-            bottomColor: .blue
+            topColor: Color.steelBlue,
+            bottomColor: Color.lightCyan
         )
     }
 

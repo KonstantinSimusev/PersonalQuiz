@@ -40,8 +40,8 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(
-            topColor: .green,
-            bottomColor: .blue
+            topColor: Color.mediumSeaGreen,
+            bottomColor: Color.honeydew
         )
         setupUI()
     }

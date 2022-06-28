@@ -16,8 +16,8 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(
-            topColor: .cyan,
-            bottomColor: .blue
+            topColor: Color.steelBlue,
+            bottomColor: Color.lightCyan
         )
         navigationItem.hidesBackButton = true
         updateResult()
